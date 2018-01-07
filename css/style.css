@@ -1,0 +1,291 @@
+/* Estilos generales*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  transition-duration: 0.3s;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  padding: 0 10px;
+  height: 50px;
+}
+
+a:active {
+  opacity: 0.4;
+  transition-duration: 0s;
+}
+
+a:hover {
+  color: #05baba;
+  opacity: 0.6;
+}
+
+body {
+  margin: 0;
+  background-color: #EFF1F1;
+}
+
+button {
+  background-color: #008080;
+  color: #FFF;
+  font-size: 18px;
+  padding: 12px 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+button:active {
+  opacity: 1;
+  transition-duration: 0s;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  background-color: #06191F;
+  color: #FFF;
+}
+
+footer p {
+  background-color: #06191F;
+  line-height: 80px;
+  margin: 0;
+}
+
+nav h2 {
+  font-size: 20px;
+}
+
+nav h2, nav ul {
+  line-height: 50px;
+  margin: 0;
+  display: inline-block;
+}
+
+nav span {
+  display: none;
+  line-height: 30px;
+  border: .5px solid #FFF;
+  border-radius: 3px;
+  float: right;
+  padding: 0 10px;
+  margin-top: 10px;
+  color: #FFF;
+}
+
+nav span:hover {
+  cursor: pointer;
+  background-color: #FFF;
+  color: #06191F;
+}
+
+p {
+  line-height: 1.5;
+}
+
+section:not(.logo) {
+  margin: 20px 0 50px 0;
+}
+
+ul {
+  list-style: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+nav {
+  position: fixed;
+  background-color: #06191F;
+  color: #FFF;
+  z-index: 1000;
+  max-width: 1900px;
+}
+
+.button {
+  background-color: #EFF1F1;
+}
+
+.button hr {
+  margin: 0;
+  border: 0.5px solid #FFF;
+}
+
+.card {
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  filter: brightness(.6);
+}
+
+.card img:hover {
+  filter: none;
+}
+
+.card h3, .card p, .card span {
+  margin: 10px 20px;
+}
+
+.text-content {
+  height: 170px;
+}
+
+.card button {
+  font-size: 16px;
+  margin: 20px;
+  padding: 10px 15px;
+}
+
+.card:nth-child(3) {
+  /* Margen de media columna para cada lado del card central */
+  margin: 0 4.1665%;
+}
+
+/*  Estructura de columnas  */
+
+.col {
+  display: block;
+  float: left;
+  min-height: 2px;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1900px;
+  color: #484747;
+  background-color: #FFF;
+}
+
+.contact p:first-of-type {
+  font-weight: bold;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact p:nth-child(3) {
+  margin-bottom: 16px;
+}
+
+.contact .fa {
+  color: #008080;
+  margin-right: 3%;
+}
+
+.contact a {
+  display: initial;
+  margin: initial;
+  padding: initial;
+  text-decoration: none;
+  color: #4A8396;
+}
+
+.contact a:hover {
+  color: #7C0E0C;
+  opacity: initial;
+  border: none;
+}
+
+/*  Agrupando  */
+
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.logo {
+  height: 458px;
+  background-color: teal;
+  background-image: url(../assets/images/large.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  filter: brightness(.6);
+}
+
+.logo:hover {
+  filter: none;
+}
+
+/*  Retícula de 12 divisiones */
+
+.span_12_of_12 {
+  width: 100%;
+}
+
+.span_11_of_12 {
+  width: 91.66%;
+}
+
+.span_10_of_12 {
+  width: 83.33%;
+}
+
+.span_9_of_12 {
+  width: 75%;
+}
+
+.span_8_of_12 {
+  width: 66.66%;
+}
+
+.span_7_of_12 {
+  width: 58.33%;
+}
+
+.span_6_of_12 {
+  width: 50%;
+}
+
+.span_5_of_12 {
+  width: 41.66%;
+}
+
+.span_4_of_12 {
+  width: 33.33%;
+}
+
+.span_3_of_12 {
+  width: 25%;
+}
+
+.span_2_of_12 {
+  width: 16.66%;
+}
+
+.span_1_of_12 {
+  width: 8.333%;
+}
+
+/*  Secciones  */
+
+.section {
+  clear: both;
+  padding: 0px;
+  width: 100%;
+}
